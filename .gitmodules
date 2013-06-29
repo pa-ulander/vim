@@ -1,5 +1,5 @@
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
@@ -16,9 +16,6 @@
 [submodule "bundle/jshint.vim"]
 	path = bundle/jshint.vim
 	url = git://github.com/wookiehangover/jshint.vim.git
-[submodule "bundle/phplint.vim"]
-	path = bundle/phplint.vim
-	url = git://github.com/Jonty/phplint.vim.git
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = git://github.com/mozilla/rust.git
