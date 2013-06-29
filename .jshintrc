@@ -1,0 +1,15 @@
+{
+	"es5": true,
+	"esnext": true,
+	"boss": true,
+	"node": true,
+	"browser": true,
+	"strict": true,
+	"white": false,
+	"smarttabs": true,
+	"newcap": false,
+	"undef": true,
+	"unused": true,
+	"onecase": true,
+	"indent": 4
+}
