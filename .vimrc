@@ -41,3 +41,5 @@ set omnifunc=syntaxcomplete#Complete
 let g:phpqa_codesniffer_args = "--standard=PSR1"
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
+
+:CtrlP ~/Projects
