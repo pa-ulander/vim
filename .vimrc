@@ -20,6 +20,7 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 set number
+set relativenumber
 
 set background=dark
 colorscheme solarized
