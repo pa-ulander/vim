@@ -1,42 +1,28 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 REPO=`pwd`
-VIM=~/.vim
-VIMRC=~/.vimrc
-JSHINTRC=~/.jshintrc
-BUNDLE=$VIM/bundle
-AUTOLOAD=$VIM/autoload
+VIM_PATH=$HOME/.vim
 
 git submodule init
-git submodule update
+git submodule update --remote
 
-rm -rf $VIM
-rm -f $VIMINFO
-rm -f $VIMRC
-rm -rf $BUNDLE
-cp $REPO/.vimrc $VIMRC
+#clear files
+rm -r $VIM_PATH $HOME/.viminfo $HOME/.vimrc $HOME/.jshintrc
+
+#create dirs
+mkdir -p $VIM_PATH/backupdir $VIM_PATH/swapdir $VIM_PATH/undodir $VIM_PATH/config $VIM_PATH/colors
+
+#bundle
+cp -r $REPO/bundle $VIM_PATH/bundle
 
 #pathogen
-mkdir -p $AUTOLOAD $VIM/backupdir $VIM/swapdir $VIM/undodir $VIM/config
-curl -so $AUTOLOAD/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
-
-cp -r $REPO/bundle $BUNDLE
-
+cp -r $REPO/misc/vim-pathogen/autoload $VIM_PATH
 
 #rust
-cd $BUNDLE
-mv ./rust ./rust-repo
-mkdir ./rust
-mv ./rust-repo/src/etc/vim/* ./rust
-rm -rf ./rust-repo
+mkdir $VIM_PATH/bundle/rust
+cp -r $REPO/misc/rust/src/etc/vim/* $VIM_PATH/bundle/rust
 
-#jshint
-cd $BUNDLE
-if type "npm" > /dev/null
-then
-   cp $REPO/.jshintrc $JSHINTRC
-   cd $BUNDLE/jshint.vim/ftplugin/javascript/jshint/
-   npm remove jshint
-   npm install jshint
-else
-    rm -rf $BUNDLE/jshint.vim
-fi
+#themes
+cp -r $REPO/misc/tomorrow-theme/vim/colors/* $VIM_PATH/colors
+
+#rcfiles
+cp $REPO/vimrc $HOME/.vimrc

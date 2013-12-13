@@ -21,9 +21,9 @@ set smartcase                   " ... unless they contain at least one capital l
 
 set number
 set relativenumber
+set hidden
 
-set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 set directory=~/.vim/swapdir//
 set backupdir=~/.vim/backupdir//
