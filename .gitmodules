@@ -54,3 +54,7 @@
 	path = misc/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 	branch = master
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
+	branch = master
