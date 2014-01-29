@@ -54,3 +54,19 @@
 	path = bundle/vdebug
 	url = https://github.com/joonty/vdebug.git
 	branch = master
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = https://github.com/rking/ag.vim.git
+	branch = master
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+	branch = master
+[submodule "misc/unite-outline"]
+	path = misc/unite-outline
+	url = https://github.com/Shougo/unite-outline.git
+	branch = master
+[submodule "misc/vim-rooter"]
+	path = misc/vim-rooter
+	url = https://github.com/airblade/vim-rooter.git
+	branch = master
