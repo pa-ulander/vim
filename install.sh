@@ -27,6 +27,7 @@ cp -r $REPO/misc/tomorrow-theme/vim/colors/* $VIM_PATH/colors
 
 #rcfiles
 cp $REPO/vimrc $HOME/.vimrc
+cp $REPO/jshintrc $HOME/.jshintrc
 
 #build stuff
 cd $VIM_PATH/bundle/vimproc.vim
