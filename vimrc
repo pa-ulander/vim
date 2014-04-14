@@ -45,6 +45,8 @@ let g:phpqa_codesniffer_args = "--standard=PSR1"
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
 
+let JSHintUpdateWriteOnly=1
+
 
 "" Airline
 let g:airline#extensions#tabline#enabled = 1
