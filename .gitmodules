@@ -62,7 +62,7 @@
 	path = bundle/phpcomplete-extended
 	url = https://github.com/m2mdas/phpcomplete-extended.git
 	branch = master
-[submodule "bundle/neocomplcache.vim"]
-	path = bundle/neocomplcache.vim
-	url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "bundle/neocomplete.vim"]
+	path = bundle/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim.git
 	branch = master
