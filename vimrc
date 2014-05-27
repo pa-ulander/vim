@@ -84,11 +84,11 @@ call unite#custom#source('file_rec,file_rec/async', 'max_candidates', 0)
 let g:rooter_use_lcd = 1
 
 ""autocomplete
-let g:neocomplcache#enable_at_startup = 1
-let g:neocomplcache#enable_smart_case = 1
-let g:neocomplcache#disable_auto_complete = 1
-let g:neocomplcache#enable_auto_select = 0
-inoremap <expr><C-p> neocomplcache#start_manual_complete()
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#disable_auto_complete = 1
+let g:neocomplete#enable_auto_select = 0
+inoremap <expr><C-p> neocomplete#start_manual_complete()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
