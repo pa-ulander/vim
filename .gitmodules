@@ -6,25 +6,13 @@
 	path = bundle/YAIFA
 	url = https://github.com/Raimondi/YAIFA.git
 	branch = master
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-	branch = master
 [submodule "bundle/jshint.vim"]
 	path = bundle/jshint.vim
 	url = https://github.com/wookiehangover/jshint.vim.git
 	branch = master
-[submodule "bundle/phpcomplete.vim"]
-	path = bundle/phpcomplete.vim
-	url = https://github.com/shawncplus/phpcomplete.vim.git
-	branch = master
 [submodule "bundle/vim-phpqa"]
 	path = bundle/vim-phpqa
 	url = https://github.com/joonty/vim-phpqa.git
-	branch = master
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 	branch = master
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
@@ -69,4 +57,12 @@
 [submodule "misc/vim-rooter"]
 	path = misc/vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
+	branch = master
+[submodule "bundle/phpcomplete-extended"]
+	path = bundle/phpcomplete-extended
+	url = https://github.com/m2mdas/phpcomplete-extended.git
+	branch = master
+[submodule "bundle/neocomplcache.vim"]
+	path = bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim.git
 	branch = master

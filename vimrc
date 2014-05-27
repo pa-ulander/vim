@@ -10,9 +10,9 @@ filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
 set nowrap                      " don't wrap lines
-set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
-set noexpandtab
 set backspace=indent,eol,start  " backspace through everything in insert mode
+let yaifa_indentation=1
+let yaifa_tab_width=4
 
 "" Searching
 set hlsearch                    " highlight matches
@@ -40,10 +40,7 @@ set undolevels=1000
 set undoreload=10000
 let g:unite_data_directory = '~/.vim/cache/unite'
 
-let g:SuperTabDefaultCompletionType = ""
-
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
 
 let g:phpqa_codesniffer_args = "--standard=PSR1"
 let g:phpqa_messdetector_autorun = 0
@@ -67,8 +64,6 @@ nnoremap <leader>g :<C-u>Unite -no-split -buffer-name=grep -auto-preview -start-
 " Custom mappings for the unite buffer
 autocmd FileType unite call s:unite_settings()
 function! s:unite_settings()
-  " Play nice with supertab
-  let b:SuperTabDisabled=1
   " Enable navigation with control-j and control-k in insert mode
   imap <buffer> <C-j>   <Plug>(unite_select_next_line)
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
@@ -87,3 +82,23 @@ call unite#custom#source('file_rec,file_rec/async', 'max_candidates', 0)
 
 ""router
 let g:rooter_use_lcd = 1
+
+""autocomplete
+let g:neocomplcache#enable_at_startup = 1
+let g:neocomplcache#enable_smart_case = 1
+let g:neocomplcache#disable_auto_complete = 1
+let g:neocomplcache#enable_auto_select = 0
+inoremap <expr><C-p> neocomplcache#start_manual_complete()
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+
+""custom maps
+set wmw=0
+noremap <C-J> <C-W>j<C-W>_
+noremap <C-K> <C-W>k<C-W>_
+noremap <C-L> <C-W>l
+noremap <C-H> <C-W>h
