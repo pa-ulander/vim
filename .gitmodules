@@ -66,3 +66,9 @@
 	path = bundle/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
 	branch = master
+[submodule "bundle/dbext.vim"]
+	path = bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "bundle/scratch.vim"]
+	path = bundle/scratch.vim
+	url = https://github.com/mtth/scratch.vim.git
