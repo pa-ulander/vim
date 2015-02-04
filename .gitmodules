@@ -30,10 +30,6 @@
 	path = misc/tomorrow-theme
 	url = https://github.com/chriskempson/tomorrow-theme.git
 	branch = master
-[submodule "misc/rust"]
-	path = misc/rust
-	url = https://github.com/mozilla/rust.git
-	branch = master
 [submodule "misc/vim-pathogen"]
 	path = misc/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
@@ -72,3 +68,7 @@
 [submodule "bundle/scratch.vim"]
 	path = bundle/scratch.vim
 	url = https://github.com/mtth/scratch.vim.git
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+	branch = master
