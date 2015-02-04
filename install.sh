@@ -18,10 +18,6 @@ cp -r $REPO/bundle $VIM_PATH/bundle
 #pathogen
 cp -r $REPO/misc/vim-pathogen/autoload $VIM_PATH
 
-#rust
-mkdir $VIM_PATH/bundle/rust
-cp -r $REPO/misc/rust/src/etc/vim/* $VIM_PATH/bundle/rust
-
 #themes
 cp -r $REPO/misc/tomorrow-theme/vim/colors/* $VIM_PATH/colors
 
