@@ -6,10 +6,6 @@
 	path = bundle/YAIFA
 	url = https://github.com/Raimondi/YAIFA.git
 	branch = master
-[submodule "bundle/jshint.vim"]
-	path = bundle/jshint.vim
-	url = https://github.com/wookiehangover/jshint.vim.git
-	branch = master
 [submodule "bundle/vim-phpqa"]
 	path = bundle/vim-phpqa
 	url = https://github.com/joonty/vim-phpqa.git
@@ -71,4 +67,20 @@
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+	branch = master
+[submodule "bundle/vim-cargo"]
+	path = bundle/vim-cargo
+	url = https://github.com/timonv/vim-cargo.git
+	branch = master
+[submodule "bundle/vim-qml"]
+	path = bundle/vim-qml
+	url = https://github.com/pmarques/vim-qml.git
+	branch = master
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
+	branch = master
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
 	branch = master

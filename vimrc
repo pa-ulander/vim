@@ -46,8 +46,18 @@ let g:phpqa_codesniffer_args = "--standard=PSR1"
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
 
-"" JSHint
-let JSHintUpdateWriteOnly=1
+"" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"" Syntastic checkers
+let g:syntastic_javascript_checkers = ['eslint']
 
 "" Airline
 let g:airline#extensions#tabline#enabled = 1
