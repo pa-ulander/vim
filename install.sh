@@ -7,7 +7,7 @@ git submodule init
 git submodule update --remote
 
 #clear files
-rm -r $VIM_PATH $HOME/.viminfo $HOME/.vimrc $HOME/.jshintrc
+rm -r $VIM_PATH $HOME/.viminfo $HOME/.vimrc $HOME/.eslintrc
 
 #create dirs
 mkdir -p $VIM_CACHE/backupdir $VIM_CACHE/swapdir $VIM_CACHE/undodir $VIM_CACHE/unite $VIM_PATH/config $VIM_PATH/colors
@@ -18,16 +18,12 @@ cp -r $REPO/bundle $VIM_PATH/bundle
 #pathogen
 cp -r $REPO/misc/vim-pathogen/autoload $VIM_PATH
 
-#rust
-mkdir $VIM_PATH/bundle/rust
-cp -r $REPO/misc/rust/src/etc/vim/* $VIM_PATH/bundle/rust
-
 #themes
 cp -r $REPO/misc/tomorrow-theme/vim/colors/* $VIM_PATH/colors
 
 #rcfiles
 cp $REPO/vimrc $HOME/.vimrc
-cp $REPO/jshintrc $HOME/.jshintrc
+cp $REPO/eslintrc $HOME/.eslintrc
 
 #build stuff
 cd $VIM_PATH/bundle/vimproc.vim

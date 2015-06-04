@@ -6,10 +6,6 @@
 	path = bundle/YAIFA
 	url = https://github.com/Raimondi/YAIFA.git
 	branch = master
-[submodule "bundle/jshint.vim"]
-	path = bundle/jshint.vim
-	url = https://github.com/wookiehangover/jshint.vim.git
-	branch = master
 [submodule "bundle/vim-phpqa"]
 	path = bundle/vim-phpqa
 	url = https://github.com/joonty/vim-phpqa.git
@@ -29,10 +25,6 @@
 [submodule "misc/tomorrow-theme"]
 	path = misc/tomorrow-theme
 	url = https://github.com/chriskempson/tomorrow-theme.git
-	branch = master
-[submodule "misc/rust"]
-	path = misc/rust
-	url = https://github.com/mozilla/rust.git
 	branch = master
 [submodule "misc/vim-pathogen"]
 	path = misc/vim-pathogen
@@ -65,4 +57,30 @@
 [submodule "bundle/neocomplete.vim"]
 	path = bundle/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
+	branch = master
+[submodule "bundle/dbext.vim"]
+	path = bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "bundle/scratch.vim"]
+	path = bundle/scratch.vim
+	url = https://github.com/mtth/scratch.vim.git
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+	branch = master
+[submodule "bundle/vim-cargo"]
+	path = bundle/vim-cargo
+	url = https://github.com/timonv/vim-cargo.git
+	branch = master
+[submodule "bundle/vim-qml"]
+	path = bundle/vim-qml
+	url = https://github.com/pmarques/vim-qml.git
+	branch = master
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
+	branch = master
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
 	branch = master
